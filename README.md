@@ -1,6 +1,6 @@
 # Fortigate
 ### How to remove (unset) the "mgmt" interface in a multi-VDOM environment from vdom "root":
-It is not always easy to change the Fortigate's settings while dealing with multiple test/production/cmo/fmo envrinonments.
+It is not always easy to change the Fortigate's settings while dealing with multiple test/production/cmo/fmo environments.
 The GUI shows 0.0.0.0/0 for the cluster management port and for the dedicated management port as well.
 If you have all of your interfaces in a vdom "root" after issuing "show system interface" command:
 ```
