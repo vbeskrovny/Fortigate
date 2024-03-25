@@ -38,7 +38,7 @@ end
 ```
 Then the following steps will help you to move the "mgmt" interface back to the "global" section and let configure the port1 (or port5, or whatever port you want) as a dedicated cluster port:
 
-1. Do the factory reset (either from the multi-vdom global area or from the top level in a non-vdom).
+1. Do the factory reset (either from the multi-vdom global area or from the top level in a non-vdom)
 2. Configure mgmt & routing in order to access the GUI
 3. Backup the config and open in notepad++
 4. Remove the static route referring to the mgmt interface
@@ -63,6 +63,6 @@ config system ha
     set priority 200
 end
 ```
-7. Upload the config to the fortigate and let it reboot.
+7. Upload the config to the fortigate and let it to reboot
 8. Once it is back online - change the vdom to the multi-vdom
-9. Now you should see no vdom assignment for the mgmt interface after "show system interface" command in a global vdom area. Also mgmt IP and Port1 (or the cluster management port of your choice) IP should be visible in a GUI.
+9. Now you should see no vdom assignment for the mgmt interface after "show system interface" command in a global vdom area. Also mgmt IP and Port1 (or the cluster management port of your choice) IP should be visible in a GUI
